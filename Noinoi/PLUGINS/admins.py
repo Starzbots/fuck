@@ -47,9 +47,9 @@ async def skip(client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/Shubhanshutya"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/Starz_support"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/Shubhanshutya"),
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/Starz_bots"),
             ]
         ]
     )

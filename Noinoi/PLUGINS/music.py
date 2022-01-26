@@ -1,4 +1,4 @@
-# © NOINOI MUSIC @CFC_BOT_SUPPORT
+# © NOINOI MUSIC 
 
 import re
 import asyncio
@@ -111,7 +111,7 @@ async def play(c: Client, m: Message):
                 )
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **Downloading audio...**")
+            suhu = await replied.reply("📥 **alexa Downloading ...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -134,7 +134,7 @@ async def play(c: Client, m: Message):
                 )
             else:
              try:
-                await suhu.edit("🔄 **Connecting to vc...**")
+                await suhu.edit("🔄 **Connecting to voicechat...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioPiped(

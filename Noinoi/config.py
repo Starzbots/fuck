@@ -9,7 +9,7 @@ if os.path.exists("local.env"):
 load_dotenv()
 admins = {}
 SESSION_NAME = getenv("SESSION_NAME", "AQCbBG5IUa0Oh_r-h5kAcupsPQUefNMmH7hzrWppaMaZWpzN-x3DTylBpKipbr2dHjd8CltY6ooNBLOTOncZFJkjAfRV3ggN0bfN_sn9-emnY6JOYrq2lw2SkzQZVj_bwDjr3FtwAy6NTiiFGyYU50IsnE8Oqv_rnXLL_sQKrvNCBbxdDOiuXizePLEyZTg6mr75HSXX51UCO41SmLqQnSRs7fEK8bwn6-yMXqOx-1ObmNiSFZZDYOnp2PKHhyfmatawXWpeC42r7FCe9oCHGPrF_cO4OeViV5h5P8gSVCL5heauh917LNsVV2IwVSqqk9uTWu6CRVzKco5ON-ScOrG-AAAAASrnbxEA")
-BOT_TOKEN = getenv("BOT_TOKEN", "5007724504:AAFbW-piKHN38qQCOU05JAlaoOyfxHaYfzU")
+BOT_TOKEN = getenv("BOT_TOKEN", "5007724504:AAFm7cZ50CRv0FjDZmaZ77Fh6YsxoW83Tw0")
 BOT_NAME = getenv("BOT_NAME", " Alexa bot")
 API_ID = int(getenv("API_ID", "9273779"))
 API_HASH = getenv("API_HASH", "287aab6efb13cdd2f042232e704d26ce")

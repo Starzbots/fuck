@@ -47,9 +47,9 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("• Mᴇɴᴜ", callback_data="cbmenu"),
+                InlineKeyboardButton("• Gʀᴏᴜᴘ", url=f"https://t.me/STARZ_SUPPORT"),
                 InlineKeyboardButton(
-                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/DeCodeSupport"),
+                    "• Cʜᴀɴɴᴇʟ", url=f"https://t.me/STARZ_BOTS"),
             ]
         ]
     )
@@ -80,7 +80,7 @@ async def play(c: Client, m: Message):
         return
     try:
         ubot = (await user.get_me()).id
-        b = await c.get_chat_member(chat_id , ubot)
+        b = await c.get_chat_member(chat_id, ubot)
         if b.status == "kicked":
             await m.reply_text(
                 f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
@@ -218,7 +218,7 @@ async def play(c: Client, m: Message):
                 "💬 **Reply to an audio file or give something to search.**"
             )
         else:
-            suhu = await message.reply_text(chat.id, f"**Yuriko Downloader**\n\n**Title:** {title[:50]}\n\n0% 🤨😞🥺😔😑😥😢☹️🙁😕👻 100%")
+            suhu = await c.send_message(chat_id, "🔍 **Searching...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
